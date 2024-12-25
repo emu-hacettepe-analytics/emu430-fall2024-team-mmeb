@@ -5,9 +5,9 @@ sidebar: false
 
 Hello!! This is our project webpage.
 
-Please stay tuned to follow our project activities.
+# **Assessing the gender wage gap in Turkey o ver the years 2002-2019**
 
-# Team Members
+## Team Members
 
 1.  [Ayşe Elif Erol](https://emu-hacettepe-analytics.github.io/emu430-fall2024-eliferoll/)
 
@@ -15,6 +15,8 @@ Please stay tuned to follow our project activities.
 
 3.  Medina Safizade
 
-# Project Topic
+## Project Topic
 
-# Data Set
+## Data Set
+
+## 
