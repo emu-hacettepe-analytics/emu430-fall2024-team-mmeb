@@ -1,1 +1,67 @@
 /* css styles */
+body {
+  background-color: #FCE4EC; /* Softer, pastel pink for a more cohesive vibe */
+  font-family: 'Calibri', cursive, sans-serif;
+  color: #6F3570; /* Darker purple-pink for text */
+}
+
+h1, h2, h3 {
+  color: #D81B60; /* Vibrant pink for headers */
+  text-shadow: 2px 2px 5px #F8BBD0; /* Softer pink shadow */
+}
+
+.btn {
+  background-color: #F48FB1; /* Soft pink for button background */
+  border-color: #EC407A; /* Darker pink border for contrast */
+  color: #FFFFFF; /* White text for readability */
+}
+
+a {
+  color: #AD1457; /* Strong pink for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F50057; /* Bright pink on hover for emphasis */
+}
+
+p {
+  line-height: 1.6; /* Improves readability */
+  color: #880E4F; /* Rich pink for paragraph text */
+}
+
+footer {
+  background-color: #F8BBD0; /* Soft pink footer */
+  color: #6A1B9A; /* Deep purple text for contrast */
+  text-align: center;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #EC407A; /* Slightly darker pink on hover */
+  color: #FFFFFF; /* Consistent white text */
+  border-color: #D81B60; /* Matches header pink */
+}
+
+.btn {
+  background-color: #A7C957; /* Soft green for buttons */
+  border-color: #6A994E; /* Deep green for border */
+  color: #FFF; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6A994E; /* Darker green on hover */
+  border-color: #2C5F2D; /* Dark green border */
+}
+
+footer {
+  background-color: #FF6F61; /* Warm pinkish footer */
+  color: #FFF; /* White text */
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid #FF8C42; /* Orange border on top */
+}

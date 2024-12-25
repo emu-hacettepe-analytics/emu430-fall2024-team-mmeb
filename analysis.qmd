@@ -2,8 +2,48 @@
 title: "Analysis"
 ---
 
-About this site
-
 ```{r}
-1 + 1
+library(tidyverse)
+library(readxl)
+library(ggthemes)
+
+file_path <- "C:/Users/Elif/Downloads/Assessing-the-gender-wage-gap-Turkey-in-the-years-20022019.xlsx"
+sheet_name <- "Table 6"
+
+data <- read_excel(file_path, sheet = sheet_name, col_names = TRUE)
+
+
+colnames(data) <- c("Year", "Difference", "Endowments_Effect", "Discrimination_Effect", "Selection_Effect")
+
+
+data <- data |> 
+  mutate(across(everything(), ~ str_replace_all(as.character(.), ",", "."))) |> 
+  mutate(across(-Year, as.numeric), Year = as.numeric(Year))
+
+
+data_long <- data |> 
+  pivot_longer(
+    cols = -Year,
+    names_to = "Component",
+    values_to = "Value"
+  )
+
+
+data_long |> 
+  ggplot(aes(x = Year, y = Value, color = Component)) +  
+  geom_line(linewidth = 1) +
+  geom_point(size = 2) +
+  labs(
+    title = "Decomposition of Gender Wage Gap Over Years (2002–2019)",
+    x = "Year",
+    y = "Log Point Value",
+    color = "Component"
+  ) +
+  theme_fivethirtyeight() +  
+  theme(
+    text = element_text(size = 14, family = "Comic Sans MS"), 
+    axis.text.x = element_text(angle = 45, hjust = 1), 
+    legend.position = "bottom"
+  )
+
 ```
