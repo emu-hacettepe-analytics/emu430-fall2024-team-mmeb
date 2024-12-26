@@ -1,11 +1,13 @@
 ---
-title: "Team mmeb"
+title: "EMU430 Course Project Team mmeb"
 sidebar: false 
 ---
 
 Hello!! This is our project webpage.
 
-# **Assessing the gender wage gap in Turkey o ver the years 2002-2019**
+# **Assessing the gender wage gap in Turkey over the years (2002-2019)**
+
+[Assessing the gender wage gap: Turkey in the years 2002–2019](https://sciendo.com/article/10.18559/ebr.2021.1.6?form=MG0AV3)
 
 ## Team Members
 
@@ -17,6 +19,26 @@ Hello!! This is our project webpage.
 
 ## Project Topic
 
-## Data Set
+The aim of the project is to analyze the changes in the gender wage gap in Turkey over the years, understand its components, and draw insights related to social equality.
+
+#### Description
+
+The Turkish Household Labour Survey (THLS) dataset covers different perspectives of the labor market in Turkey between 2002 and 2019. It includes detailed information on wages, employment status, demographic characteristics, and other labor-related factors. The data provides insights into employment trends, income distribution, and labor force participation rates, with specific information regarding gender, age, education, and employment sectors.
+
+#### Why Did We Choose This Dataset?
+
+The main reason for selecting this dataset is that it offers a comprehensive and rich source of data to explore important labor market issues in Turkey, particularly the gender wage gap. This is a critical topic in the context of modern labor economics and societal equity. With data spanning from 2002 to 2019, it provides a great opportunity for spectacular analysis of trends and patterns, making it ideal for identifying shifts in the gender wage gap over time, as well as analyzing how different demographic factors contribute to it.
+
+### Key Takeaways:
+
+1.  **Data and Focus**: The project analyzed the evolution of the gender wage gap in Turkey over time, considering various factors such as discrimination, endowment differences, and selection effects.
+
+2.  **Significant Findings**: While the impact of discrimination has decreased over time, differences in endowments (e.g., education and experience) still play a significant role in the wage gap.
+
+3.  **Conclusions**: Reducing disparities in variables like education, marital status, and labor force participation is critical for advancing gender equality in wages.
+
+4.  **Policy Implications**: Addressing structural barriers and promoting inclusive policies can further mitigate the gender wage gap.
+
+5.  **Future Directions**: Continued monitoring and deeper analysis of sectoral and regional variations are needed to develop targeted solutions.
 
 ## 
