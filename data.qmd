@@ -294,7 +294,101 @@ While the variability in wages is comparable between genders, the consistent dif
 
 ## **Table 5**: Summary statistics for hourly wages by gender in logarithmic terms
 
+![](images/WhatsApp%20Image%202024-12-26%20at%2022.53.32.jpeg){width="526"}
+
+#### Data Description
+
+Table 5 illustrates the distribution of various demographic characteristics, including age, education, tenure, and marital status by gender in Turkey from 2002 to 2019. The data includes mean values and standard deviations for males and females across these characteristics, providing insights into the gender differences over time.
+
+#### What Was Done in the Code?
+
+#### **Column Cleaning:**
+
+-   Columns were renamed to distinguish gender and year (e.g., Male_Age_Mean, Female_Age_Mean).
+
+#### Data Transformation to Long Format
+
+-   The data was transformed into a long format, ensuring that each row represents a unique combination of year and gender.
+
+#### Visualization
+
+-   A line chart was created to represent trends in mean age by gender over time. Separate lines for male and female workers allow for easy comparison.
+
+![](images/unnamed-chunk-5-1.png){width="536"}
+
+#### What Does the Chart Show?
+
+#### **Key Observations**
+
+**Age:** The mean age for both male and female workers shows a gradual increase over time, with male workers generally being older on average compared to female workers.
+
+**Education:** There is an observable increase in the mean years of education for both genders, with male workers consistently having a slightly higher educational attainment than female workers.
+
+**Tenure:** Male workers tend to have longer tenures compared to female workers, indicating job stability differences between genders.
+
+**Marital Status:** A higher proportion of male workers are married compared to female workers, reflecting societal norms and employment patterns.
+
+**Gender Convergence:** Over the years, the gap between male and female educational attainment has narrowed, especially in higher education. Female participation in higher education has increased significantly. Illiteracy rates have decreased for both genders, with a faster decline observed for women.
+
+#### Results and Context
+
+There has been a reduction in gender inequality in lower education levels, with a marked increase in female representation in higher education. This indicates significant progress in women’s access to education over the study period.
+
+#### Trends Over Time
+
+Between 2002 and 2019, both genders experienced improvements in educational attainment, with pronounced gains for women in higher education.
+
+#### Connection to Broader Themes
+
+These findings suggest that improved education levels contribute to better economic participation and wage equality for women. Enhanced education opportunities for women are likely to drive broader societal changes, including increased labor force participation and reduced wage gaps.
+
 ## **Table 6**: Decomposition of the gender wage gap (in log points)
+
+![](images/WhatsApp%20Image%202024-12-26%20at%2023.04.02.jpeg){width="468"}
+
+#### Description of Data
+
+Turkey's gender wage disparity from 2002 to 2019 is broken down in Table 6. The data comprises the total wage disparity and deconstructs it into three elements: the selection effect, discrimination effect, and endowments effect.
+
+#### What is done in the code?
+
+#### **Cleaning of the Columns**
+
+-   Endowments_Effect, Discrimination_Effect, and Selection_Effect are some examples of the new names that were used to distinguish the various decomposition components.
+
+-   The data was transformed into a long format using pivot_longer, showing separate columns for "Year," "Component," and "Value."
+
+#### Visualization
+
+-   A line chart displayed previous trends for each pay gap component. For the sake of comparison, each element in the chart contains lines and points."Component," with "Value."s for each component, allowing for easy comparison.
+
+![](images/unnamed-chunk-6-1%20(1).png){width="489"}
+
+#### What Does the Chart Show?
+
+**Primary Observations:** Difference: The overall difference in wages between genders shows fluctuations over the years, with some periods of widening and narrowing of the gap.
+
+**Endowments Effect:** This component measures the impact of differences in characteristics (like education and experience) on the wage gap. It shows a relatively stable trend over the period.
+
+**Discrimination Effect:** This component captures the unexplained part of the wage gap, often attributed to discrimination. There is a noticeable fluctuation in this effect, reflecting changes in societal and economic factors influencing gender wage disparities.
+
+**Selection Effect:** This component indicates the impact of gender-specific selection into the labor market. It shows some variation, highlighting the changes in labor force participation and employment patterns for men and women.
+
+**Gender Convergence:** Over the years, the endowments effect has remained relatively stable, suggesting that differences in characteristics have a consistent impact on the wage gap.
+
+Fluctuations in the discrimination effect indicate changing levels of unexplained wage disparities, reflecting potential shifts in discrimination or other unmeasured factors.
+
+#### Results and Context Gender Disparities in Wages
+
+The decomposition analysis reveals that while part of the wage gap can be explained by differences in characteristics, a significant portion remains unexplained, highlighting the role of discrimination and other factors.
+
+#### Trends Over Time
+
+Between 2002 and 2019, the components of the wage gap have shown various trends, with the discrimination effect being particularly variable. This variability underscores the complexity of addressing gender wage disparities.
+
+#### Connection to Broader Themes
+
+The findings align with other tables in the study, suggesting that improving educational and employment opportunities for women can help reduce the wage gap. Addressing the discrimination effect requires broader societal and policy interventions to create a more equitable labor market.
 
 ## **Table 7**: Results of Heckman’s two-step procedure predictions (in log points)
 
@@ -337,6 +431,8 @@ This table presents gender-specific wage predictions based on Heckman’s two-st
 #### **Visualization:**
 
 -   A line chart with `facet_wrap` was created to display the predictions for each variable, with separate panels for each factor.
+
+![](images/unnamed-chunk-6-1.png){width="511"}
 
 #### **What Does the Chart Show?**
 

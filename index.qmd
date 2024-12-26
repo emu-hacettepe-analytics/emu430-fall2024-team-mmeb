@@ -5,6 +5,8 @@ sidebar: false
 
 Hello!! This is our project webpage.
 
+![](images/C53B.gif){fig-align="center" width="320"}
+
 # **Assessing the gender wage gap in Turkey over the years (2002-2019)**
 
 [Assessing the gender wage gap: Turkey in the years 2002–2019](https://sciendo.com/article/10.18559/ebr.2021.1.6?form=MG0AV3)

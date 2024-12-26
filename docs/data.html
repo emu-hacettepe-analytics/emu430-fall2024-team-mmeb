@@ -458,14 +458,107 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="table-5-summary-statistics-for-hourly-wages-by-gender-in-logarithmic-terms" class="level2">
 <h2 class="anchored" data-anchor-id="table-5-summary-statistics-for-hourly-wages-by-gender-in-logarithmic-terms"><strong>Table 5</strong>: Summary statistics for hourly wages by gender in logarithmic terms</h2>
+<p><img src="images/WhatsApp Image 2024-12-26 at 22.53.32.jpeg" class="img-fluid" width="526"></p>
+<section id="data-description-5" class="level4">
+<h4 class="anchored" data-anchor-id="data-description-5">Data Description</h4>
+<p>Table 5 illustrates the distribution of various demographic characteristics, including age, education, tenure, and marital status by gender in Turkey from 2002 to 2019. The data includes mean values and standard deviations for males and females across these characteristics, providing insights into the gender differences over time.</p>
+</section>
+<section id="what-was-done-in-the-code-4" class="level4">
+<h4 class="anchored" data-anchor-id="what-was-done-in-the-code-4">What Was Done in the Code?</h4>
+</section>
+<section id="column-cleaning-1" class="level4">
+<h4 class="anchored" data-anchor-id="column-cleaning-1"><strong>Column Cleaning:</strong></h4>
+<ul>
+<li>Columns were renamed to distinguish gender and year (e.g., Male_Age_Mean, Female_Age_Mean).</li>
+</ul>
+</section>
+<section id="data-transformation-to-long-format-2" class="level4">
+<h4 class="anchored" data-anchor-id="data-transformation-to-long-format-2">Data Transformation to Long Format</h4>
+<ul>
+<li>The data was transformed into a long format, ensuring that each row represents a unique combination of year and gender.</li>
+</ul>
+</section>
+<section id="visualization-2" class="level4">
+<h4 class="anchored" data-anchor-id="visualization-2">Visualization</h4>
+<ul>
+<li>A line chart was created to represent trends in mean age by gender over time. Separate lines for male and female workers allow for easy comparison.</li>
+</ul>
+<p><img src="images/unnamed-chunk-5-1.png" class="img-fluid" width="536"></p>
+</section>
+<section id="what-does-the-chart-show-3" class="level4">
+<h4 class="anchored" data-anchor-id="what-does-the-chart-show-3">What Does the Chart Show?</h4>
+</section>
+<section id="key-observations-1" class="level4">
+<h4 class="anchored" data-anchor-id="key-observations-1"><strong>Key Observations</strong></h4>
+<p><strong>Age:</strong> The mean age for both male and female workers shows a gradual increase over time, with male workers generally being older on average compared to female workers.</p>
+<p><strong>Education:</strong> There is an observable increase in the mean years of education for both genders, with male workers consistently having a slightly higher educational attainment than female workers.</p>
+<p><strong>Tenure:</strong> Male workers tend to have longer tenures compared to female workers, indicating job stability differences between genders.</p>
+<p><strong>Marital Status:</strong> A higher proportion of male workers are married compared to female workers, reflecting societal norms and employment patterns.</p>
+<p><strong>Gender Convergence:</strong> Over the years, the gap between male and female educational attainment has narrowed, especially in higher education. Female participation in higher education has increased significantly. Illiteracy rates have decreased for both genders, with a faster decline observed for women.</p>
+</section>
+<section id="results-and-context-3" class="level4">
+<h4 class="anchored" data-anchor-id="results-and-context-3">Results and Context</h4>
+<p>There has been a reduction in gender inequality in lower education levels, with a marked increase in female representation in higher education. This indicates significant progress in women’s access to education over the study period.</p>
+</section>
+<section id="trends-over-time-2" class="level4">
+<h4 class="anchored" data-anchor-id="trends-over-time-2">Trends Over Time</h4>
+<p>Between 2002 and 2019, both genders experienced improvements in educational attainment, with pronounced gains for women in higher education.</p>
+</section>
+<section id="connection-to-broader-themes-1" class="level4">
+<h4 class="anchored" data-anchor-id="connection-to-broader-themes-1">Connection to Broader Themes</h4>
+<p>These findings suggest that improved education levels contribute to better economic participation and wage equality for women. Enhanced education opportunities for women are likely to drive broader societal changes, including increased labor force participation and reduced wage gaps.</p>
+</section>
 </section>
 <section id="table-6-decomposition-of-the-gender-wage-gap-in-log-points" class="level2">
 <h2 class="anchored" data-anchor-id="table-6-decomposition-of-the-gender-wage-gap-in-log-points"><strong>Table 6</strong>: Decomposition of the gender wage gap (in log points)</h2>
+<p><img src="images/WhatsApp Image 2024-12-26 at 23.04.02.jpeg" class="img-fluid" width="468"></p>
+<section id="description-of-data" class="level4">
+<h4 class="anchored" data-anchor-id="description-of-data">Description of Data</h4>
+<p>Turkey’s gender wage disparity from 2002 to 2019 is broken down in Table 6. The data comprises the total wage disparity and deconstructs it into three elements: the selection effect, discrimination effect, and endowments effect.</p>
+</section>
+<section id="what-is-done-in-the-code" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-done-in-the-code">What is done&nbsp;in the code?</h4>
+</section>
+<section id="cleaning-of-the-columns" class="level4">
+<h4 class="anchored" data-anchor-id="cleaning-of-the-columns"><strong>Cleaning of the Columns</strong></h4>
+<ul>
+<li><p>Endowments_Effect, Discrimination_Effect, and Selection_Effect are some examples of the new names that were used to distinguish the various decomposition components.</p></li>
+<li><p>The data was transformed into a long format using pivot_longer, showing separate columns for “Year,” “Component,” and “Value.”</p></li>
+</ul>
+</section>
+<section id="visualization-3" class="level4">
+<h4 class="anchored" data-anchor-id="visualization-3">Visualization</h4>
+<ul>
+<li>A line chart displayed previous trends for each pay gap component. For the sake of comparison, each element in the chart contains lines and points.”Component,” with “Value.”s for each component, allowing for easy comparison.</li>
+</ul>
+<p><img src="images/unnamed-chunk-6-1 (1).png" class="img-fluid" width="489"></p>
+</section>
+<section id="what-does-the-chart-show-4" class="level4">
+<h4 class="anchored" data-anchor-id="what-does-the-chart-show-4">What Does the Chart Show?</h4>
+<p><strong>Primary Observations:</strong> Difference: The overall difference in wages between genders shows fluctuations over the years, with some periods of widening and narrowing of the gap.</p>
+<p><strong>Endowments Effect:</strong> This component measures the impact of differences in characteristics (like education and experience) on the wage gap. It shows a relatively stable trend over the period.</p>
+<p><strong>Discrimination Effect:</strong> This component captures the unexplained part of the wage gap, often attributed to discrimination. There is a noticeable fluctuation in this effect, reflecting changes in societal and economic factors influencing gender wage disparities.</p>
+<p><strong>Selection Effect:</strong> This component indicates the impact of gender-specific selection into the labor market. It shows some variation, highlighting the changes in labor force participation and employment patterns for men and women.</p>
+<p><strong>Gender Convergence:</strong> Over the years, the endowments effect has remained relatively stable, suggesting that differences in characteristics have a consistent impact on the wage gap.</p>
+<p>Fluctuations in the discrimination effect indicate changing levels of unexplained wage disparities, reflecting potential shifts in discrimination or other unmeasured factors.</p>
+</section>
+<section id="results-and-context-gender-disparities-in-wages" class="level4">
+<h4 class="anchored" data-anchor-id="results-and-context-gender-disparities-in-wages">Results and Context Gender Disparities in Wages</h4>
+<p>The decomposition analysis reveals that while part of the wage gap can be explained by differences in characteristics, a significant portion remains unexplained, highlighting the role of discrimination and other factors.</p>
+</section>
+<section id="trends-over-time-3" class="level4">
+<h4 class="anchored" data-anchor-id="trends-over-time-3">Trends Over Time</h4>
+<p>Between 2002 and 2019, the components of the wage gap have shown various trends, with the discrimination effect being particularly variable. This variability underscores the complexity of addressing gender wage disparities.</p>
+</section>
+<section id="connection-to-broader-themes-2" class="level4">
+<h4 class="anchored" data-anchor-id="connection-to-broader-themes-2">Connection to Broader Themes</h4>
+<p>The findings align with other tables in the study, suggesting that improving educational and employment opportunities for women can help reduce the wage gap. Addressing the discrimination effect requires broader societal and policy interventions to create a more equitable labor market.</p>
+</section>
 </section>
 <section id="table-7-results-of-heckmans-two-step-procedure-predictions-in-log-points" class="level2">
 <h2 class="anchored" data-anchor-id="table-7-results-of-heckmans-two-step-procedure-predictions-in-log-points"><strong>Table 7</strong>: Results of Heckman’s two-step procedure predictions (in log points)</h2>
-<section id="data-description-5" class="level4">
-<h4 class="anchored" data-anchor-id="data-description-5"><strong>Data Description</strong></h4>
+<section id="data-description-6" class="level4">
+<h4 class="anchored" data-anchor-id="data-description-6"><strong>Data Description</strong></h4>
 <p>This table presents gender-specific wage predictions based on Heckman’s two-step procedure, analyzing the impact of various factors such as education, marriage, age, and tenure. It provides insights into how these variables influence wage differences between males and females over time.</p>
 </section>
 <section id="columns" class="level4">
@@ -476,8 +569,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Meta:</strong> Additional information extracted from parentheses in the dataset.</p>
 <p><strong>Stars:</strong> Statistical significance levels extracted as asterisks.</p>
 </section>
-<section id="what-was-done-in-the-code-4" class="level4">
-<h4 class="anchored" data-anchor-id="what-was-done-in-the-code-4"><strong>What Was Done in the Code?</strong></h4>
+<section id="what-was-done-in-the-code-5" class="level4">
+<h4 class="anchored" data-anchor-id="what-was-done-in-the-code-5"><strong>What Was Done in the Code?</strong></h4>
 </section>
 <section id="data-import-and-initial-cleaning" class="level4">
 <h4 class="anchored" data-anchor-id="data-import-and-initial-cleaning"><strong>Data Import and Initial Cleaning:</strong></h4>
@@ -504,21 +597,22 @@ ul.task-list li input[type="checkbox"] {
 <li>Missing years (e.g., 2010–2019) were filled using <code>complete()</code>, ensuring a continuous timeline for visualization.</li>
 </ul>
 </section>
-<section id="visualization-2" class="level4">
-<h4 class="anchored" data-anchor-id="visualization-2"><strong>Visualization:</strong></h4>
+<section id="visualization-4" class="level4">
+<h4 class="anchored" data-anchor-id="visualization-4"><strong>Visualization:</strong></h4>
 <ul>
 <li>A line chart with <code>facet_wrap</code> was created to display the predictions for each variable, with separate panels for each factor.</li>
 </ul>
+<p><img src="images/unnamed-chunk-6-1.png" class="img-fluid" width="511"></p>
 </section>
-<section id="what-does-the-chart-show-3" class="level4">
-<h4 class="anchored" data-anchor-id="what-does-the-chart-show-3"><strong>What Does the Chart Show?</strong></h4>
+<section id="what-does-the-chart-show-5" class="level4">
+<h4 class="anchored" data-anchor-id="what-does-the-chart-show-5"><strong>What Does the Chart Show?</strong></h4>
 <p><strong>Education:</strong> Predicted values for women are consistently higher than for men, indicating the significant impact of education on female wages.</p>
 <p><strong>Marriage:</strong> Women show greater variability in wage predictions related to marital status compared to men.</p>
 <p><strong>Age and Tenure:</strong> These variables exhibit relatively stable trends with smaller gender differences, reflecting similar impacts on wages for both genders.</p>
 <p><strong>Constant Effects:</strong> Steady increases in predicted values for both genders over time indicate positive overall trends in wage levels.</p>
 </section>
-<section id="results-and-context-3" class="level4">
-<h4 class="anchored" data-anchor-id="results-and-context-3"><strong>Results and Context</strong></h4>
+<section id="results-and-context-4" class="level4">
+<h4 class="anchored" data-anchor-id="results-and-context-4"><strong>Results and Context</strong></h4>
 <p><strong>Gender-Specific Trends:</strong></p>
 <ul>
 <li><p>Women outperform men in terms of predicted wage benefits from education and marriage.</p></li>

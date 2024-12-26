@@ -250,6 +250,65 @@ ggplot(data_long, aes(x = Gender, y = Log_Wage, fill = Gender)) +
 
 ## Table 5. Summary statistics for hourly wages by gender in logarithmic terms
 
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Load the Excel file
+file_path <- "C:/Users/Melik/Desktop/Assessing-the-gender-wage-gap-Turkey-in-the-years-20022019.xlsx"
+table_5 <- read_excel(file_path, sheet = "Table 5", skip = 3)
+
+# Ensure column names are correctly assigned
+colnames(table_5) <- c(
+  "Year", "Male_Age_Mean", "Male_Age_StdDev", "Female_Age_Mean", "Female_Age_StdDev",
+  "Male_Education_Mean", "Male_Education_StdDev", "Female_Education_Mean", "Female_Education_StdDev",
+  "Male_Tenure_Mean", "Male_Tenure_StdDev", "Female_Tenure_Mean", "Female_Tenure_StdDev",
+  "Male_Marital_Mean", "Male_Marital_StdDev", "Female_Marital_Mean", "Female_Marital_StdDev"
+)
+
+# Transform data to long format
+table_5_long <- table_5 %>%
+  pivot_longer(cols = -Year, names_to = c("Gender", "Category", "Stat"), names_sep = "_") %>%
+  pivot_wider(names_from = Stat, values_from = value)
+
+# Split data by category
+age_data <- table_5_long %>% filter(Category == "Age")
+education_data <- table_5_long %>% filter(Category == "Education")
+tenure_data <- table_5_long %>% filter(Category == "Tenure")
+marital_data <- table_5_long %>% filter(Category == "Marital")
+
+# Visualization
+p1 <- ggplot(age_data, aes(x = Year, y = Mean, color = Gender)) +
+  geom_line(size = 1) + geom_point(size = 2) +
+  labs(title = "Mean Age by Gender Over Time", x = "Year", y = "Mean Age") +
+  scale_color_manual(name = "Gender", values = c("Male" = "blue", "Female" = "red")) +
+  theme_minimal()
+
+p2 <- ggplot(education_data, aes(x = Year, y = Mean, color = Gender)) +
+  geom_line(size = 1) + geom_point(size = 2) +
+  labs(title = "Mean Education by Gender Over Time", x = "Year", y = "Mean Education (Years)") +
+  scale_color_manual(name = "Gender", values = c("Male" = "blue", "Female" = "red")) +
+  theme_minimal()
+
+p3 <- ggplot(tenure_data, aes(x = Year, y = Mean, color = Gender)) +
+  geom_line(size = 1) + geom_point(size = 2) +
+  labs(title = "Mean Tenure by Gender Over Time", x = "Year", y = "Mean Tenure (Years)") +
+  scale_color_manual(name = "Gender", values = c("Male" = "blue", "Female" = "red")) +
+  theme_minimal()
+
+p4 <- ggplot(marital_data, aes(x = Year, y = Mean, color = Gender)) +
+  geom_line(size = 1) + geom_point(size = 2) +
+  labs(title = "Marital Status by Gender Over Time", x = "Year", y = "Mean Marital Status (0 = Single, 1 = Married)") +
+  scale_color_manual(name = "Gender", values = c("Male" = "blue", "Female" = "red")) +
+  theme_minimal()
+
+# Combine plots into one
+library(gridExtra)
+grid.arrange(p1, p2, p3, p4, ncol = 2)
+```
+
 ## Table 6. Decomposition of the gender wage gap (in log points)
 
 ```{r}
